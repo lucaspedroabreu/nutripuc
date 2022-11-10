@@ -83,6 +83,7 @@ header button.login:hover {
 .outdoor .CTA {
   margin-inline: auto;
   text-align: center;
+  height: auto;
 }
 
 .outdoor h1 {
@@ -91,16 +92,18 @@ header button.login:hover {
 
 .outdoor p {
   font-size: xx-large;
+  text-shadow: 1px 1px 4px rgba(44, 44, 44, 0.4);
+
   max-width: 35ch;
 }
 
-.outdoor img {
+.outdoor .hero-image-container {
   z-index: -1;
   position: relative;
-  content: cover;
-  overflow: hidden;
   top: calc(-120px - 2 * 4rem);
   clip-path: polygon(51% 0, 100% 0%, 100% 100%, 0% 100%);
+  content: cover;
+  overflow: hidden;
 }
 
 .outdoor button {
