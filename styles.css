@@ -208,3 +208,30 @@ section > h2 {
   scale: 1.03;
   transition: 0.2s;
 }
+
+footer {
+  margin-top: 150px;
+  min-height: 200px;
+  background-color: rgb(223, 223, 223);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-logo {
+  padding: 80px;
+  flex-grow: 1
+}
+
+.footer-right {
+  padding: 80px;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.info, .social {
+  margin: 10px;
+  width: 15rem;
+}
