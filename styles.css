@@ -113,11 +113,19 @@ header button.login:hover {
   border: none;
   border-radius: 10px;
   text-transform: uppercase;
-  height: 42px;
-  width: 170px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  height: 48px;
+  width: 300px;
   cursor: pointer;
   margin: 20px 0;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.outdoor button:hover {
+  scale: 1.03;
+  transition: 0.2s;
+  
 }
 
 #intro {
@@ -134,7 +142,7 @@ header button.login:hover {
   margin: 4rem;
 }
 
-section#sobre > h2 {
+section > h2 {
   text-align: center;
   margin-bottom: 50px;
 }
@@ -146,9 +154,57 @@ section#sobre > h2 {
   justify-content: center;
 }
 
-.cards-about {
+.card-about {
   text-align: center;
-  border: 1px solid red;
   width: 300px;
   height: 400px;  
+}
+
+.container-cards-plans {
+  display: flex;
+  gap: 1.5rem;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.card-plans {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between ;
+  text-align: center;
+  background-color: rgb(233, 233, 233);
+  border-radius: 20px;
+  width: 300px;
+  height: 400px;
+}
+
+.card-plans:hover {
+  box-shadow: 2px 2px 3px #888888;
+  transition: 0.2s;
+}
+
+.card-plans-info {
+  padding: 20px;
+}
+
+.card-plans > ul {
+  margin: 0;
+  margin-top: 25px;
+}
+
+.plans-btn {
+  background-color: rgb(202, 202, 202);
+  height: 60px;
+  width: 100%;
+  margin-bottom: 0;
+  border-radius: 0 0 20px 20px;
+  border: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.card-plans:hover {
+  scale: 1.03;
+  transition: 0.2s;
 }
