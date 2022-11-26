@@ -32,6 +32,10 @@ h3 {
   font-size: 48px;
 }
 
+img { /* Lembrar de remover esse background-color */
+  background-color: gainsboro;
+}
+
 header img {
   display: inline-block;
 }
@@ -98,6 +102,7 @@ header button.login:hover {
 }
 
 .outdoor .hero-image-container {
+  background-color: gainsboro; /* Lembrar de remover esse background-color */
   z-index: -1;
   position: relative;
   top: calc(-120px - 2 * 4rem);
@@ -130,12 +135,23 @@ header button.login:hover {
 
 #intro {
   display: flex;
+  flex-flow: row wrap;
   margin: 0 5rem;
   align-items: center;
+  justify-content: space-between;
 }
 
-.section-text {
-  margin-left: 4rem;
+#intro img {
+  width: 30%;
+  height: 400px;
+  background-color: gainsboro;
+}
+
+#intro p {
+  width: 30%;
+  flex-grow: 2;
+  text-align: justify;
+  margin: 2rem 4rem;
 }
 
 #sobre {
@@ -234,4 +250,15 @@ footer {
 .info, .social {
   margin: 10px;
   width: 15rem;
+}
+
+@media screen and (max-width: 750px) {
+  #intro img {
+    width: 100%;
+  }
+
+  #intro p {
+    width: 100%;
+    margin: 2rem 0;
+  }
 }
