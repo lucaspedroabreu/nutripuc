@@ -23,6 +23,7 @@ body {
   background-color: var(--themeWhite);
   color: var(--themeGrayMedium);
   scroll-behavior: smooth;
+  /* overflow: hidden; Remover esse atributo */
 }
 
 h1,
@@ -151,9 +152,110 @@ header button.login:hover {
 
 .menu-icon {
   display: none;
-
   background-color: var(--themeGreenMedium);
   border: 1px transparent;
+}
+
+.login-bg {
+  position: absolute;
+  top:0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-modal {
+  margin: 5%;
+  background-color: var(--themeGreeExtraLight);
+  height: 400px;
+  width: 600px;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.close-modal {
+  position: relative;
+  align-self: flex-end;
+  z-index: 3;
+  top: -42px;
+  font-size: 22px;
+  width: 40px;
+  height: 39px;
+  border: 2px solid var(--themeGreenMedium);
+  color: var(--themeGreenMedium);
+  border-radius: 50%;
+}
+
+.login-modal .select-login-type {
+  margin-top: -38px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-modal .login-type-login, .login-modal .login-type-signup {
+  height: 100%;
+  width: 50%;
+  border: none;
+  font-weight: 500;
+  color: var(--themeGreenMedium);
+}
+
+.login-modal .login-type-login {
+  background-color: var(--themeGreeExtraLight);
+  border-left: 1px solid var(--themeGreenMedium);
+  border-top: 1px solid var(--themeGreenMedium);
+  border-right: 1px solid var(--themeGreenMedium);
+}
+
+.login-modal .login-type-signup {
+  background-color: var(--themeGreenMediumLigth);
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid var(--themeGreenMedium);
+}
+
+.form-login label, .form-login button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-login input, .form-login select {
+  color: var(--themeGreenMedium);
+}
+
+.form-login input, .form-login select, .form-login button {
+  padding-left: 10px;
+  margin-top: 5px;
+  height: 35px;
+  width: 100%;
+}
+
+.form-login button {
+  padding-left: 0;
+  margin-top: 55px;
+  font-size: 18px;
+  align-self: flex-end;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--themeGreenMedium);
+  color: var(--themeWhite);
+  border: none;
+}
+
+.form-login button:hover {
+  filter: brightness(80%);
+}
+
+.form-login button:active {
+  transform: translateY(1px);
 }
 
 #intro {
