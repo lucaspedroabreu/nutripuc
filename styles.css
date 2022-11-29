@@ -10,14 +10,14 @@
 :root {
   font-size: 16px;
   --primaryFontFamily: Poppins, sans-serif;
-  
-  --themeWhite: #FEFEFE;
-  --themeGreenMedium: #588D73;
-  --themeGreenMediumLigth: #BAD7CE;
-  --themeGreenLigth: #E3F0EC;
-  --themeGreeExtraLight: #F1F4EF;
-  --themeGrayMedium: #7A7A7A;
-  --themeOrangeMedium: #C6815B;
+
+  --themeWhite: #fefefe;
+  --themeGreenMedium: #588d73;
+  --themeGreenMediumLight: #bad7ce;
+  --themeGreenLight: #e3f0ec;
+  --themeGreenExtraLight: #f1f4ef;
+  --themeGrayMedium: #7a7a7a;
+  --themeOrangeMedium: #c6815b;
 }
 
 body {
@@ -186,7 +186,8 @@ header button.login:hover {
   border-bottom: 1px solid var(--themeGreenMedium);
 }
 
-#about h2, #plans h2 {
+#about h2,
+#plans h2 {
   color: var(--themeGreenMedium);
   text-align: center;
   margin-bottom: 100px;
@@ -194,17 +195,16 @@ header button.login:hover {
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.container-cards-about  {
+.container-cards-about {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-
 }
 
 .card-about {
   text-align: center;
   width: 300px;
-  height: 400px;  
+  height: 400px;
 }
 
 .card-about h3 {
@@ -244,7 +244,7 @@ header button.login:hover {
 .card-plan {
   display: flex;
   flex-direction: column;
-  justify-content: space-between ;
+  justify-content: space-between;
   text-align: center;
   border: 1px solid var(--themeGreenMedium);
   border-radius: 20px;
@@ -272,7 +272,7 @@ header button.login:hover {
 .card-plan ul li {
   padding: 8px 10px;
   font-size: clamp(14px, 12vw, 18px);
-  color: var(--themeGreenMedium)
+  color: var(--themeGreenMedium);
 }
 
 .card-plan p {
@@ -284,13 +284,14 @@ header button.login:hover {
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.card-plan-plus p, .card-plan-premium p {
-  background-color: var(--themeGreenMediumLigth);
+.card-plan-plus p,
+.card-plan-premium p {
+  background-color: var(--themeGreenMediumLight);
   height: 40px;
 }
 
 .card-plan-premium {
-  background-color: var(--themeGreenLigth);
+  background-color: var(--themeGreenLight);
 }
 
 .plans-btn {
@@ -312,13 +313,14 @@ header button.login:hover {
 
 #contact {
   min-height: 200px;
-  background-color: var(--themeGreeExtraLight);
+  background-color: var(--themeGreenExtraLight);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-#contact .info img, #contact .social img {
+#contact .info img,
+#contact .social img {
   margin-right: 10px;
 }
 
@@ -334,7 +336,8 @@ header button.login:hover {
   align-content: space-around;
 }
 
-#contact .info, #contact .social {
+#contact .info,
+#contact .social {
   min-width: 15rem;
 }
 
@@ -406,7 +409,7 @@ header button.login:hover {
     width: 500px;
     text-align: center;
   }
-  
+
   .hero-image-container {
     position: absolute;
     z-index: -2;
@@ -442,20 +445,24 @@ header button.login:hover {
     gap: 2.5em;
   }
 
-  #contact .footer-right, .info, .social {
+  #contact .footer-right,
+  .info,
+  .social {
     align-content: none;
     margin: 5%;
   }
 }
 
 @media screen and (max-width: 460px) {
-  #contact .footer-right, #contact .container-logo {
+  #contact .footer-right,
+  #contact .container-logo {
     text-align: center;
     justify-content: center;
     padding: 20px;
   }
-  
-  #contact .info, #contact .social {
+
+  #contact .info,
+  #contact .social {
     margin-bottom: 40px;
     min-width: min-content;
   }
