@@ -22,10 +22,19 @@
             <li><a href="#about">Sobre</a></li>
             <li><a href="#plans">Planos</a></li>
             <li><a href="#contact">Contato</a></li>
-            <li><a class="list-item-login" href="/">Login</a></li>
+            <li>
+              <button
+                type="button"
+                class="btn btn-light md d-md-none"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              >
+                Login
+              </button>
+            </li>
           </ul>
         </div>
-        <button class="login">Login</button>
+        <button type="button" class="login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
         <button class="menu-icon" href="/"><img src="assets\hambergermenu.png" alt="menu" /></button>
       </nav>
       <section class="outdoor">
@@ -33,44 +42,40 @@
         <div class="CTA">
           <h1>Nutrição otimizada</h1>
           <p>
-            As melhores ferramentas de gestão para o seu consultório, com um único objetivo: mudar vidas através da nutrição consciente.  
+            As melhores ferramentas de gestão para o seu consultório, com um único objetivo: mudar vidas através da
+            nutrição consciente.
           </p>
-          <button>Faça seu cadastro</button>
+          <a href="signup.html" class="mt-3 custom-btn">Faça seu cadastro</a>
         </div>
       </section>
       <div class="hero-image-container">
         <img src="assets\brooke-lark-GwNsgnSAfQM-unsplash.jpg" alt="Imagem de outdoor" />
       </div>
     </header>
-    <div class="login-bg">
-      <div class="login-modal">
-        <button class="close-modal">X</button>
-        <div class="select-login-type">
-          <button class="login-type-login">Login</button>
-          <button class="login-type-signup">Sign Up</button>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Faça seu Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="loginModalEmail" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="loginModalEmail" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="loginModalSenha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="loginModalSenha" />
+              </div>
+              <button type="submit" class="custom-btn">Fazer login</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          </div>
         </div>
-        <div class="form-login">
-          <form action="">
-            <label for="email">
-              E-mail<br>
-              <input id=email type="email">
-            </label>
-            <label for="select-usuario">
-              Tipo de usuário<br>
-              <select name="select-usuario" id="select-usuario">
-                <option value=""></option>
-                <option value="nutricionista">Nutricionista</option>
-                <option value="paciente">Paciente</option>
-              </select>
-            </label>
-            <label for="password">
-              Senha<br>
-              <input id=password type="password">
-            </label>
-            <button type="button">Entrar</button>
-          </form>
-        </div>
-        <div class="form-signup"></div>
       </div>
     </div>
     <main>
@@ -78,10 +83,13 @@
         <img src="assets\nathan-dumlao-bRdRUUtbxO0-unsplash.jpg" alt="Imagem de introdução" />
         <div class="section-text">
           <p>
-            Queremos promover a interação ideal entre nutricionistas e pacientes, visando o uso inteligente das ferramentas que oferecemos, respeitando a individualidade e necessidade de cada paciente com ferramentas voltadas para a melhor experiência no acompanhamento nutricional.
+            Queremos promover a interação ideal entre nutricionistas e pacientes, visando o uso inteligente das
+            ferramentas que oferecemos, respeitando a individualidade e necessidade de cada paciente com ferramentas
+            voltadas para a melhor experiência no acompanhamento nutricional.
           </p>
           <p>
-            Oferecemos ferramentas que será possível acompanhar diariamente os pacientes com anamnese completa, cálculo de nutrientes, orientações de protocolos, gráfico de evolução, além de outras vantagens exclusivas.
+            Oferecemos ferramentas que será possível acompanhar diariamente os pacientes com anamnese completa, cálculo
+            de nutrientes, orientações de protocolos, gráfico de evolução, além de outras vantagens exclusivas.
           </p>
         </div>
       </section>
@@ -92,21 +100,25 @@
             <img src="./assets/nutri-icon.png" alt="Nutrição Clínica" />
             <h3>Nutrição Clínica</h3>
             <p>
-              Plano de emagrecimento saudável, voltado para o tratamento de patologias e condições clínicas, através da alimentação e seu balanceamento.
+              Plano de emagrecimento saudável, voltado para o tratamento de patologias e condições clínicas, através da
+              alimentação e seu balanceamento.
             </p>
           </div>
           <div class="card-about">
             <img src="./assets/nutri-icon.png" alt="Nutrição Funcional" />
             <h3>Nutrição Funcional</h3>
             <p>
-              Nutrição especializada que trata cada paciente, com os dados bioquímicos e fisiológicos para um planejamento e individualizado, potencializando resultados.
+              Nutrição especializada que trata cada paciente, com os dados bioquímicos e fisiológicos para um
+              planejamento e individualizado, potencializando resultados.
             </p>
           </div>
           <div class="card-about">
             <img src="./assets/nutri-icon.png" alt="Nutrição Esportiva" />
             <h3>Nutrição Esportiva</h3>
             <p>
-              Para pacientes que buscam otimizar o desempenho esportivo, profissional ou amador, melhorar a condição física e os aspectos estéticos relacionados à composição corporal.            </p>
+              Para pacientes que buscam otimizar o desempenho esportivo, profissional ou amador, melhorar a condição
+              física e os aspectos estéticos relacionados à composição corporal.
+            </p>
           </div>
         </div>
       </section>
@@ -161,25 +173,25 @@
         <div class="info">
           <h4>Contato</h4>
           <p>Grupo 02, PUC Minas</p>
-          <span><img src="./assets/🦆 icon _gmail_.png" alt="gmail"></span>
-          <span><img src="./assets/🦆 icon _whatsapp_.png" alt="whatsapp"></span>
+          <span><img src="./assets/🦆 icon _gmail_.png" alt="gmail" /></span>
+          <span><img src="./assets/🦆 icon _whatsapp_.png" alt="whatsapp" /></span>
         </div>
         <div class="social">
           <h4>Redes Sociais</h4>
-          <span><img src="./assets/🦆 icon _instagram_.png" alt="instagram"></span>
-          <span><img src="./assets/🦆 icon _twitter_.png" alt="twitter"></span>
-          <span><img src="./assets/🦆 icon _facebook_.png" alt="facebook"></span>
-          <span><img src="./assets/🦆 icon _linkedin_.png" alt="linkedin"></span>
-          <span><img src="./assets/🦆 icon _youtube_.png" alt="youtube"></span>
+          <span><img src="./assets/🦆 icon _instagram_.png" alt="instagram" /></span>
+          <span><img src="./assets/🦆 icon _twitter_.png" alt="twitter" /></span>
+          <span><img src="./assets/🦆 icon _facebook_.png" alt="facebook" /></span>
+          <span><img src="./assets/🦆 icon _linkedin_.png" alt="linkedin" /></span>
+          <span><img src="./assets/🦆 icon _youtube_.png" alt="youtube" /></span>
         </div>
       </div>
     </footer>
-    <!-- <script
+    <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
     <script src="./script.js"></script>
   </body>
 </html>

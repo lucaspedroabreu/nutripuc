@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Projeto Nutripuc</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a id="home" href="/"><img class="logo" src="./assets/logo166x156.png" alt="Logo" /></a>
+
+        <button type="button" class="login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        <button class="menu-icon" href="/"><img src="assets\hambergermenu.png" alt="menu" /></button>
+      </nav>
+      <section class="outdoor">
+        <div class="CTA-glass"></div>
+        <div class="CTA">
+          <h1>Faça seu cadastro</h1>
+          <p>Entre para os profissionais que se beneficiam usando nosso sistema.</p>
+        </div>
+      </section>
+      <div class="hero-image-container">
+        <img src="assets\brooke-lark-GwNsgnSAfQM-unsplash.jpg" alt="Imagem de outdoor" />
+      </div>
+    </header>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Faça seu Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="loginModalEmail" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="loginModalEmail" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="loginModalSenha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="loginModalSenha" />
+              </div>
+              <button type="submit" class="custom-btn">Fazer login</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <h3 class="text-md-center text-center my-5">Cadastro de Profissional Nutricionista</h3>
+      <form class="my-5 w-25 m-auto mw-100 bg-light py-5 px-3 rounded-3">
+        <div class="mb-3">
+          <label for="signupEmail" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="signupEmail" aria-describedby="emailHelp" />
+        </div>
+        <div class="mb-3">
+          <label for="cip-crn" class="form-label">CIP CRN</label>
+          <input type="text" class="form-control" id="cip-crn" />
+        </div>
+        <div class="mb-3">
+          <label for="signupPassword" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="signupPassword" />
+        </div>
+        <div class="mb-3">
+          <label for="passwordConfirmation" class="form-label">Confirmar senha</label>
+          <input type="password" class="form-control" id="passwordConfirmation" />
+        </div>
+        <button type="submit" class="custom-btn">Realizar Cadastro</button>
+      </form>
+    </main>
+    <footer id="contact">
+      <div class="container-logo">
+        <a href="#home">
+          <img class="logo" src="./assets/logo166x156.png" alt="Logo" />
+        </a>
+      </div>
+      <div class="footer-right">
+        <div class="info">
+          <h4>Contato</h4>
+          <p>Grupo 02, PUC Minas</p>
+          <span><img src="./assets/🦆 icon _gmail_.png" alt="gmail" /></span>
+          <span><img src="./assets/🦆 icon _whatsapp_.png" alt="whatsapp" /></span>
+        </div>
+        <div class="social">
+          <h4>Redes Sociais</h4>
+          <span><img src="./assets/🦆 icon _instagram_.png" alt="instagram" /></span>
+          <span><img src="./assets/🦆 icon _twitter_.png" alt="twitter" /></span>
+          <span><img src="./assets/🦆 icon _facebook_.png" alt="facebook" /></span>
+          <span><img src="./assets/🦆 icon _linkedin_.png" alt="linkedin" /></span>
+          <span><img src="./assets/🦆 icon _youtube_.png" alt="youtube" /></span>
+        </div>
+      </div>
+    </footer>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
