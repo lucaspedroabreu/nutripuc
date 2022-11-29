@@ -7,4 +7,28 @@ header {
 
 .col {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.col .dashboard-btn {
+  width: 100%;
+  margin-block: 1rem;
+}
+
+.col + .col {
+  border-left: 1px solid var(--bs-gray-400);
+}
+
+.nav-breadcrumb {
+  width: 100%;
+  margin: 1rem auto;
+  border-bottom: 1px solid var(--themeGreenMedium);
+}
+
+.nav-breadcrumb nav {
+  width: fit-content;
+  margin: 0 auto;
 }

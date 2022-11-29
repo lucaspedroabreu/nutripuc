@@ -35,30 +35,37 @@
         aria-label="breadcrumb"
       >
         <ol class="breadcrumb">
-          <li class="breadcrumb-item active"><a href="dashboard.html">Dashboard</a></li>
+          <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+          <li class="breadcrumb-item active"><a href="new-client.html">Cadastrar Paciente</a></li>
         </ol>
       </nav>
     </div>
     <main class="container">
-      <div class="row my-5">
-        <div class="col">
-          Planos Alimentares
-          <a class="custom-btn dashboard-btn">Cadastrar Receitas</a>
-          <a class="custom-btn dashboard-btn">Listar Receitas</a>
-          <a class="custom-btn dashboard-btn">Cadastrar Dietas</a>
-          <a class="custom-btn dashboard-btn">Listar Dietas</a>
+      <h3 class="text-md-center text-center my-5">Cadastrar novo paciente</h3>
+
+      <form class="my-5 w-25 m-auto mw-100 bg-light py-5 px-3 rounded-3">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nome Completo</label>
+          <input type="email" class="form-control" id="name" aria-describedby="emailHelp" />
         </div>
-        <div class="col">
-          Acompanhamentos
-          <a class="custom-btn dashboard-btn">Iniciar Acompanhamento</a>
-          <a class="custom-btn dashboard-btn">Histórico de Acompanhamentos</a>
+        <div class="mb-3">
+          <label for="nascimento" class="form-label">Nascimento</label>
+          <input type="date" class="form-control" id="nascimento" />
         </div>
-        <div class="col">
-          Pacientes
-          <a href="new-client.html" class="custom-btn dashboard-btn">Cadastrar Paciente</a>
-          <a href="clients.html" class="custom-btn dashboard-btn">Listar Pacientes</a>
+        <div class="mb-3">
+          <label for="peso" class="form-label">Peso</label>
+          <input type="number" class="form-control" id="peso" />
         </div>
-      </div>
+        <div class="mb-3">
+          <label for="endereço" class="form-label">Endereço completo</label>
+          <input type="text" class="form-control" id="endereço" />
+        </div>
+        <div class="mb-3">
+          <label for="Telefone" class="form-label">Telefone</label>
+          <input type="phone" class="form-control" id="Telefone" />
+        </div>
+        <button type="submit" class="custom-btn">Cadastrar paciente</button>
+      </form>
     </main>
     <footer id="contact">
       <div class="container-logo">
