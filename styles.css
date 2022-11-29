@@ -171,7 +171,7 @@ header button.login:hover {
 
 .login-modal {
   margin: 5%;
-  background-color: var(--themeGreeExtraLight);
+  background-color: var(--themeGreenExtraLight);
   height: 400px;
   width: 600px;
   display: flex;
@@ -210,14 +210,14 @@ header button.login:hover {
 }
 
 .login-modal .login-type-login {
-  background-color: var(--themeGreeExtraLight);
+  background-color: var(--themeGreenExtraLight);
   border-left: 1px solid var(--themeGreenMedium);
   border-top: 1px solid var(--themeGreenMedium);
   border-right: 1px solid var(--themeGreenMedium);
 }
 
 .login-modal .login-type-signup {
-  background-color: var(--themeGreenMediumLigth);
+  background-color: var(--themeGreenMediumLight);
   border-top: 1px solid transparent;
   border-right: 1px solid transparent;
   border-bottom: 1px solid var(--themeGreenMedium);
