@@ -575,6 +575,12 @@ header button.login:hover {
   }
 }
 
+.patientCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (max-width: 460px) {
   #contact .footer-right,
   #contact .container-logo {
