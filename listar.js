@@ -6,10 +6,13 @@ function retreiveClients() {
   while (i--) {
     if (keys[i].endsWith(']')) {
       const client = localStorage.getItem(keys[i])
-      if (localStorage.getItem(`nutripucacount[${client}]-loginType` === 'paciente')) clients.push()
+      if (localStorage.getItem(`nutripucacount[${client}]-loginType` === 'paciente')) {
+        clients.push()
+      }
     }
   }
 
+  console.log(clients)
   return clients
 }
 
