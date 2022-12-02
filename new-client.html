@@ -43,18 +43,10 @@
     <main class="container">
       <h3 class="text-md-center text-center my-5">Cadastrar novo paciente</h3>
 
-      <form class="my-5 w-25 m-auto mw-100 bg-light py-5 px-3 rounded-3">
+      <form class="newClientForm my-5 w-25 m-auto mw-100 bg-light py-5 px-3 rounded-3">
         <div class="mb-3">
           <label for="name" class="form-label">Nome Completo</label>
-          <input type="email" class="form-control" id="name" aria-describedby="emailHelp" />
-        </div>
-        <div class="mb-3">
-          <label for="nascimento" class="form-label">Nascimento</label>
-          <input type="date" class="form-control" id="nascimento" />
-        </div>
-        <div class="mb-3">
-          <label for="peso" class="form-label">Peso</label>
-          <input type="number" class="form-control" id="peso" />
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" />
         </div>
         <div class="mb-3">
           <label for="endereço" class="form-label">Endereço completo</label>
@@ -63,6 +55,14 @@
         <div class="mb-3">
           <label for="Telefone" class="form-label">Telefone</label>
           <input type="phone" class="form-control" id="Telefone" />
+        </div>
+        <div class="mb-3">
+          <label for="Email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="Email" />
+        </div>
+        <div class="mb-3">
+          <label for="Nascimento" class="form-label">Nascimento</label>
+          <input type="date" class="form-control" id="Nascimento" />
         </div>
         <button type="submit" class="custom-btn">Cadastrar paciente</button>
       </form>
@@ -97,5 +97,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./script.js"></script>
+    <script src="./cadastrar.js"></script>
   </body>
 </html>
