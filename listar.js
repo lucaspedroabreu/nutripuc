@@ -4,7 +4,7 @@ function retreiveClients() {
   let i = keys.length
 
   while (i--) {
-    if (localStorage.getItem(keys[i]).endsWith(']')) {
+    if (keys[i].endsWith(']')) {
       clients.push(localStorage.getItem(keys[i]))
     }
   }
