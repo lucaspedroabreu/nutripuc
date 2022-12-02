@@ -36,16 +36,8 @@ function isLoggedIn() {
 // toda vez que a DOM é carregada, verifica se o usuário está logado
 // const body = document.querySelector('body')
 window.addEventListener('load', () => {
-  if (
-    document.location.href !==
-    'file://///wsl.localhost/Ubuntu-20.04/home/lpa/workspace/puc-minas/nutripuc/dashboard.html'
-  )
-    return
-  if (
-    document.location.href ===
-    'file://///wsl.localhost/Ubuntu-20.04/home/lpa/workspace/puc-minas/nutripuc/paciente.html'
-  )
-    return
+  if (document.location.href !== 'https://nutripuc.vercel.app/dashboard.html') return
+  if (document.location.href === 'https://nutripuc.vercel.app/paciente.html') return
   isLoggedIn()
 })
 
