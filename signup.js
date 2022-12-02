@@ -39,4 +39,7 @@ signupForm.addEventListener('submit', (event) => {
   localStorage.setItem(`nutripuc:account[${email}]`, email)
   localStorage.setItem(`nutripuc:account[${email}]-cip-crn`, cipCRN)
   localStorage.setItem(`nutripuc:account[${email}]-loginType`, loginType)
+
+  window.alert('Cadastro Realiado com sucesso')
+  window.location.assign('./index.html')
 })
