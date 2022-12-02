@@ -9,7 +9,7 @@ newClientForm.addEventListener('submit', (event) => {
   const endereçoCompleto = event.target[1].value
   const telefone = event.target[2].value
   const email = event.target[3].value
-  const nascimento = event.target[4].value
+  const nascimento = new Date(event.target[4].value)
 
   const registredAccount = localStorage.getItem(`nutripuc:account[${email}]`, email)
   if (registredAccount) {
@@ -27,9 +27,15 @@ newClientForm.addEventListener('submit', (event) => {
   localStorage.setItem(`nutripuc:account[${email}]`, email)
   localStorage.setItem(`nutripuc:account[${email}]-loginType`, loginType)
   localStorage.setItem(`nutripuc:account[${email}]-nomeCompleto`, nomeCompleto)
-  localStorage.setItem(`nutripuc:account[${email}]-registerDate`, registredAt.toDateString())
+  localStorage.setItem(
+    `nutripuc:account[${email}]-registerDate`,
+    registredAt.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
+  )
   localStorage.setItem(`nutripuc:account[${email}]-phone`, telefone)
-  localStorage.setItem(`nutripuc:account[${email}]-birthDate`, nascimento)
+  localStorage.setItem(
+    `nutripuc:account[${email}]-birthDate`,
+    nascimento.toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: 'long' })
+  )
 
   window.location.assign('./clients.html')
 })
