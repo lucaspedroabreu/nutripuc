@@ -22,10 +22,10 @@ const listaDePacientes = document.querySelector('.lista-de-pacientes')
 pacientes.forEach((paciente) => {
   console.log('funcionando')
   const email = paciente
-  const nomeDoPaciente = localStorage.getItem(`nutripucacount[${paciente}]-nomeCompleto`)
-  const dataDeRegistro = localStorage.getItem(`nutripucacount[${paciente}]-registerDate`)
-  const telefone = localStorage.getItem(`nutripucacount[${paciente}]-phone`)
-  const dataDeNascimento = localStorage.getItem(`nutripucacount[${paciente}]-birthDate`)
+  const nomeDoPaciente = localStorage.getItem(`nutripuc:account[${paciente}]-nomeCompleto`)
+  const dataDeRegistro = localStorage.getItem(`nutripuc:account[${paciente}]-registerDate`)
+  const telefone = localStorage.getItem(`nutripuc:account[${paciente}]-phone`)
+  const dataDeNascimento = localStorage.getItem(`nutripuc:account[${paciente}]-birthDate`)
 
   const cardDoPaciente = document.createElement('div')
   cardDoPaciente.classList.add('patientCard')
@@ -36,11 +36,11 @@ pacientes.forEach((paciente) => {
   const elementoDoTelefone = document.createElement('span')
   const elementoDaDataDeNascimento = document.createElement('span')
 
-  elementoDoNome.innerText = nomeDoPaciente
+  elementoDoNome.textContent = nomeDoPaciente
   elementoDoEmail.textContent = email
-  elementoDaDataDeRegistro.innerText = dataDeRegistro
-  elementoDaDataDeNascimento.innerText = dataDeNascimento
-  elementoDoTelefone.innerText = telefone
+  elementoDaDataDeRegistro.textContent = dataDeRegistro
+  elementoDaDataDeNascimento.textContent = dataDeNascimento
+  elementoDoTelefone.textContent = telefone
 
   cardDoPaciente.appendChild(elementoDoNome)
   cardDoPaciente.appendChild(elementoDoEmail)
