@@ -36,11 +36,11 @@ pacientes.forEach((paciente) => {
   const elementoDoTelefone = document.createElement('span')
   const elementoDaDataDeNascimento = document.createElement('span')
 
-  elementoDoNome.textContent = nomeDoPaciente
+  elementoDoNome.innerText = nomeDoPaciente
   elementoDoEmail.textContent = email
-  elementoDaDataDeRegistro.textContent = dataDeRegistro
-  elementoDaDataDeNascimento.textContent = dataDeNascimento
-  elementoDoTelefone.textContent = telefone
+  elementoDaDataDeRegistro.innerText = dataDeRegistro
+  elementoDaDataDeNascimento.innerText = dataDeNascimento
+  elementoDoTelefone.innerText = telefone
 
   cardDoPaciente.appendChild(elementoDoNome)
   cardDoPaciente.appendChild(elementoDoEmail)
