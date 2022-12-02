@@ -8,7 +8,7 @@ function retreiveClients() {
       const client = localStorage.getItem(keys[i])
       console.log(client)
       if (localStorage.getItem(`nutripuc:account[${client}]-loginType`) === 'paciente') {
-        clients.push()
+        clients.push(client)
       }
     }
   }
