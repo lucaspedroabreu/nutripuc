@@ -16,6 +16,7 @@ function retreiveClients() {
 const pacientes = retreiveClients()
 const listaDePacientes = document.querySelector('.lista-de-pacientes')
 pacientes.forEach((paciente) => {
+  console.log('funcionando')
   const email = paciente
   const nomeDoPaciente = localStorage.getItem(`nutripucacount[${paciente}]-nomeCompleto`)
   const dataDeRegistro = localStorage.getItem(`nutripucacount[${paciente}]-registerDate`)
