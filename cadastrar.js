@@ -26,6 +26,7 @@ newClientForm.addEventListener('submit', (event) => {
 
   localStorage.setItem(`nutripuc:account[${email}]`, email)
   localStorage.setItem(`nutripuc:account[${email}]-loginType`, loginType)
+  localStorage.setItem(`nutripuc:account[${email}]-nomeCompleto`, nomeCompleto)
   localStorage.setItem(`nutripuc:account[${email}]-registerDate`, registredAt.toDateString())
   localStorage.setItem(`nutripuc:account[${email}]-phone`, telefone)
   localStorage.setItem(`nutripuc:account[${email}]-birthDate`, nascimento)
